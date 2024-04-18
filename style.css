@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Oxanium';
+    src: url(fonts/Oxanium-VariableFont_wght.ttf);
+}
+
+/* Reset de CSS - Limpa configurações padrão que atrapalham */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+    background-image: linear-gradient(90deg, #3535c5 0%, #3535c5cc 100%) ,url(img/imagembanner.png);
+    background-repeat: no-repeat;
+    background-position: 165% 40%;
+}
+
+header {
+    height: 150px;
+    background-color: #7941F0;
+    background-image: linear-gradient(90deg, #3535c5 0%, #B241F0 100%);
+}
+
+header img {
+    width: 290px;
+}
+
+header div.container-grid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+   
+}
+
+.menu {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Oxanium";
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 1000ms ease;
+}

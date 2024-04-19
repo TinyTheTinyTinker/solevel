@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="container-grid">
             <img src="img/Logo.svg" alt="Logo da empresa Solevel">
@@ -21,12 +20,62 @@
                 <a href="#">Sobre</a>
                 <a href="#">Cases de Sucesso</a>
                 <a href="#">Contate-Nos</a>
-                <a href="#">Registrar/Login</a>
             </nav>
+            <nav class="registro"> <a href="#">Registrar/Login</a></nav>
+        </div>
     </header>
-    <div class="banner"></div>
-
+    <div class="banner">
+        <div class="container-grid textobanner">
+            <p>Seja bem-vindo(a) ao site Solevel</p>
+        </div>
     </div>
+    <section id="sobre">
+        <h2>Sobre nossa empresa</h2>
+        <p>Lorem ipsum dolor sit amet. Eum soluta enim ut aliquam sapiente et consequatur internos ut Quis maxime et illum facilis quo pariatur galisum et facere similique! Et distinctio voluptatum sit accusamus labore sit debitis aperiam ab quibusdam reprehenderit a accusantium nihil est accusamus dolor. Et voluptate quia in magnam molestiae hic veniam assumenda et culpa galisum quo praesentium ratione rem facilis nulla.</p>
+        <p>Lorem ipsum dolor sit amet. Eum soluta enim ut aliquam sapiente et consequatur internos ut Quis maxime et illum facilis quo pariatur galisum et facere similique! Et distinctio voluptatum sit accusamus labore sit debitis aperiam ab quibusdam reprehenderit a accusantium nihil est accusamus dolor. Et voluptate quia in magnam molestiae hic veniam assumenda et culpa galisum quo praesentium ratione rem facilis nulla.</p>
+    </section>
+    <section class="container-grid" id="cases">
+        <h2>Cases De Sucesso</h2>
+    
+        <div class="container-cards">
+            <div class="cardconjunto">
+                <div class="card">
+                    <img src="https://unsplash.it/600/400" alt="">
+                </div>
+                <a href="#">Reduzimos o desperdício de comida de uma escola em 80%</a>
+            </div>  
+            <div class="cardconjunto">
+                <div class="card">
+                    <img src="https://unsplash.it/600/400" alt="">
+                </div>
+                <a href="#">Reduzimos o desperdício de comida de uma escola em 80%</a>
+            </div> 
+            <div class="cardconjunto">
+                <div class="card">
+                    <img src="https://unsplash.it/600/400" alt="">
+                </div>
+                <a href="#">Reduzimos o desperdício de comida de uma escola em 80%</a>
+            </div> 
+        </div>
+      </section>
+      <section id="formulario">
+        <h2> Contate-nos</h2>
+        <form action="">
+          <div class="campo">
+            <label for="campo-nome">Qual é o seu nome?</label>
+            <input type="text" id="campo-nome" placeholder="Digite seu nome...">
+          </div>
+          <div class="campo">
+            <label for="campo-email">Em qual email podemos te responder?</label>
+            <input type="email" name="" id="campo-email" placeholder="Digite seu email...">
+          </div>
+          <div class="campo-textarea">
+            <label for="campo-descricao"> Descreva um pouco da sua empresa, e também o problema que</label>
+            <textarea name="" id="campo-descricao" cols="30" rows="10" placeholder="Descreva sue empresa e o problema que ela enfrenta..."></textarea>
+          </div>
+          <button>Enviar</button>
+        </form>
+      </section>
 </body>
 
 </html>

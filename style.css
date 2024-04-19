@@ -3,6 +3,11 @@
     src: url(fonts/Oxanium-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: 'Fredoka';
+    src: url(fonts/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
 /* Reset de CSS - Limpa configurações padrão que atrapalham */
 * {
     margin: 0;
@@ -22,15 +27,17 @@ html {
 }
 
 .banner {
-    height: 100vh;
-    background-image: linear-gradient(90deg, #3535c5 0%, #3535c5cc 100%) ,url(img/imagembanner.png);
+    height: 580px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+    background-image: linear-gradient(90deg, #3535c5 0%, #3535c500 100%) ,url(img/imagembanner.png);
     background-repeat: no-repeat;
-    background-position: 165% 40%;
 }
 
 header {
     height: 150px;
-    background-color: #7941F0;
     background-image: linear-gradient(90deg, #3535c5 0%, #B241F0 100%);
 }
 
@@ -53,12 +60,102 @@ header div.container-grid {
     justify-content: space-around;
 }
 
-.menu a {
+.menu a, .registro a {
     color:#fff;
     font-size: 20px;
     font-weight: 600;
     font-family: "Oxanium";
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
-    transition: text-decoration 1000ms ease;
+    transition: color 1000ms ease;
+}
+
+.menu a:hover, .registro a:hover {
+    color: rgb(161, 161, 161);
+}
+
+.textobanner {
+    height: calc(100vh - 280px);
+    display: flex;
+    align-items: center;
+}
+
+.textobanner p {
+    color:white;
+    font-weight: 350;
+    font-family: "Fredoka";
+    font-size: 28px;
+}
+
+#sobre {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 100px 25%;
+}
+
+h2 {
+    font-family: 'Oxanium';
+    font-size: 28px;
+    text-align: center;
+}
+
+#sobre p {
+    font-family: 'Fredoka';
+    font-size: 20px;
+    text-align: left;
+}
+
+#cases {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#cases h2 {
+    margin-bottom: 80px;
+}
+
+.card {
+    height: 220px;
+    width: 220px;
+    background-image: linear-gradient(135deg, #3535c5 0%, #7941F0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card img {
+    height: 97%;
+    width: 97%;
+    border-radius: 20px;
+}
+
+.cardconjunto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardconjunto a {
+    margin: 30px;
+    font-family: "Fredoka";
+    font-size: 16px;
+    background-image: linear-gradient(to bottom, #4141F0, #7941F0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    text-decoration: underline transparent;
+}
+
+.container-cards {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
 }

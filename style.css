@@ -111,7 +111,7 @@ h2 {
 #cases {
     text-align: center;
     padding-bottom: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 #cases h2 {
@@ -151,11 +151,156 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: black;
-    text-decoration: underline transparent;
+    text-decoration: underline dotted;
+}
+
+.cardconjunto a:hover {
+    -webkit-text-fill-color: #B241F0;
 }
 
 .container-cards {
     width: 100%;
     display:flex;
     justify-content: space-between;
+}
+
+#formulario {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#formulario h2 {
+    margin-bottom: 70px;
+}
+
+#formulario form {
+    width: 35%;
+    margin: 0 auto;
+    padding: 40px 0;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    background-image: linear-gradient(45deg, #3535c5 0%, #B241F0 100%);
+    color: white;
+    font-family: "Fredoka";
+
+}
+
+.campo {
+    width: 80%;
+    margin-bottom: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.campo-textarea {
+    width: 80%;
+    margin-bottom: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo input {
+    height: 40px;
+    color: white;
+    background-color: #00000074;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    text-indent: 10px;
+    font-family: "Fredoka";
+    font-size: 17px;
+}
+
+.campo input:focus, .campo-textarea textarea:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.655);
+}
+
+#formulario form label {
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+
+.campo-textarea textarea {
+    color: white;
+    background-color:#00000074;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: "Fredoka";
+    font-size: 17px;
+    outline: none;
+    resize: none;
+}
+
+#formulario form button {
+    height: 40px;
+    width: 60%;
+    font-family: "Fredoka";
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    background-color: #B241F0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: background-color 500ms ease;
+}
+
+#contato form input::placeholder,
+#contato form textarea::placeholder {
+    color: #b9b9b9;
+}
+
+footer {
+    height: 225px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #3535c5 0%, #B241F0 100%);
+}
+
+footer .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.redes-sociais {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.redes-sociais p {
+    color: white;
+    font-family: "Oxanium";
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.icones-redes {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a {
+    color: white;
+}
+
+.icones-redes a:hover {
+    color: #a4a4a4;
+}
+
+.icones-redes svg {
+    margin-right: 20px;
 }

@@ -400,6 +400,10 @@ footer .container-grid {
         flex-basis: unset;
     }
 
+    .card img {
+        object-fit: cover;
+    }
+
 }
 
 @media screen and (max-width: 1050px) {

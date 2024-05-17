@@ -43,10 +43,12 @@ header {
 
 header img {
     width: 290px;
+    margin-left: 10px;
 }
 
 header button {
     display: none;
+    margin-right: 10px;
 }
 
 header div.container-grid {
@@ -325,6 +327,15 @@ footer .container-grid {
 .icones-redes svg {
     margin-right: 15px;
 }
+
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras {
+    display: none;
+}
+
 
 @media screen and (max-width: 1300px) {
     header {

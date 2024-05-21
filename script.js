@@ -47,7 +47,7 @@ const solicitarOrcamento = (event) => {
         console.log(resposta)
 
         // Limpar os campos (inputs)
-        document.querySelector("#contato form").reset()
+        document.querySelector("#formulario form").reset()
 
         // Mostrar alert com msg de sucesso
         alert("Solicitação cadastrada")
